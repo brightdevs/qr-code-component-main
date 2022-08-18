@@ -1,0 +1,28 @@
+{
+  "name": "qr-code-component-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass --include-path scss style.scss style.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brightdevs/qr-code-component-main.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brightdevs/qr-code-component-main/issues"
+  },
+  "homepage": "https://github.com/brightdevs/qr-code-component-main#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "uglifycss": "^0.0.29"
+  }
+}

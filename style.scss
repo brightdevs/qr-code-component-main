@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@100;300;400;500&display=swap');
+
+$fw_400: 400;
+$fw_700: 700;
+$fs_body: 15px;
+$light-gray: hsl(212, 45%, 89%);
+$grayish-blue: hsl(220, 15%, 55%);
+$dar-kblue: hsl(218, 44%, 22%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background-color: $white;
+    border-radius: 10px;
+    max-width: 320px;
+    min-height: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    &__img {
+        height: 60%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    &__content {
+        height: 40%;
+
+
+        &__title,
+        &__body {
+            text-align: center;
+            padding: 6px 7px;
+        }
+
+        &__title {
+            font-weight: $fw_700;
+        }
+
+        &__body {
+            font-size: $fs_body;
+            color: $grayish-blue;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        padding: 0 30px;
+
+    }
+}
